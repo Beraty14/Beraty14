@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Jarvis",
-      "subtitle": "AI Assistant & RAG System",
+      "subtitle": "AI Assistant &amp; RAG System",
       "status": "ACTIVE",
       "progress": 75,
       "difficulty": 5,

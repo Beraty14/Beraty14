@@ -37,7 +37,7 @@
       <!-- Card background -->
       <rect width="364" height="68" fill="#151B26" stroke="#212936" stroke-width="1.2" rx="6" />
       <text x="16" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Jarvis</text>
-      <text x="16" y="38" font-size="9" fill="#8F9CAE">AI Assistant & RAG System</text>
+      <text x="16" y="38" font-size="9" fill="#8F9CAE">AI Assistant &amp; RAG System</text>
       
       <!-- Tech specs -->
       <text x="16" y="52" font-size="9.5" fill="#38BDF8" font-weight="600">Arch: Python / FastAPI / RAG</text>
