@@ -1,0 +1,27 @@
+{
+  "username": "Beraty14",
+  "name": "Berat Yurtsever",
+  "role": "AI Engineer",
+  "organization": "Bursa Technical University",
+  "department": "Artificial Intelligence & Machine Learning",
+  "focus": [
+    "Machine Learning",
+    "Bioinformatics",
+    "System Architecture"
+  ],
+  "kernel": "Python",
+  "core": "FastAPI",
+  "renderer": "React",
+  "acceleration": "CUDA",
+  "ml_engine": "PyTorch",
+  "database": "Postgres / Vector DB",
+  "inference": "Transformers",
+  "philosophy": [
+    "Build first.",
+    "Optimize later.",
+    "Never fake data.",
+    "Automation over repetition.",
+    "Research before implementation.",
+    "Simplicity scales."
+  ]
+}

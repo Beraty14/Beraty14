@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="100%" height="100%" aria-label="Technology Stack Matrix">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070F18" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }}
+    .tech-card {{
+      fill: #151B26;
+      stroke: #212936;
+      stroke-width: 1.2;
+      transition: all 0.3s ease;
+    }}
+    .tech-card:hover {{
+      stroke: #38BDF8;
+      filter: url(#glow);
+    }}
+  </style>
+
+  <!-- Container -->
+  <rect width="800" height="180" fill="url(#bgGrad)" stroke="#212936" stroke-width="1.5" rx="8" />
+
+  <!-- Section Header -->
+  <g class="font-sans" transform="translate(24, 28)">
+    <circle cx="6" cy="-4" r="4" fill="#38BDF8" filter="url(#glow)" />
+    <text x="18" y="0" font-size="10" font-weight="700" fill="#8F9CAE" letter-spacing="2">06 / TECHNICAL STACK MATRIX</text>
+    <line x1="-8" y1="12" x2="760" y2="12" stroke="#212936" stroke-width="1" />
+  </g>
+
+  <!-- Tech Grid Layout -->
+  <g class="font-sans" transform="translate(24, 56)">
+    
+    <!-- ROW 1 -->
+    <!-- Python -->
+    <g transform="translate(0, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Python Simplified Snake Path -->
+      <path d="M 22 13 C 22 10, 27 10, 27 13 L 27 15 L 22 15 Z M 27 29 C 27 32, 22 32, 22 29 L 22 27 L 27 27 Z" fill="#8F9CAE" />
+      <path d="M 22 15 L 22 21 C 22 23, 24 25, 26 25 L 30 25 L 30 23 L 26 23 C 25 23, 24 22, 24 21 L 24 17 L 30 17 C 32 17, 32 12, 30 12 L 24 12 C 22 12, 22 13, 22 15 Z" fill="#38BDF8" />
+      <path d="M 27 27 L 27 21 C 27 19, 25 17, 23 17 L 19 17 L 19 19 L 23 19 C 24 19, 25 20, 25 21 L 25 25 L 19 25 C 17 25, 17 30, 19 30 L 25 30 C 27 30, 27 29, 27 27 Z" fill="#F8FAFC" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">Python</text>
+    </g>
+
+    <!-- PyTorch -->
+    <g transform="translate(126, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- PyTorch Flame/Polygon -->
+      <path d="M 24 13 L 30 23 L 24 29 L 18 23 Z" fill="none" stroke="#38BDF8" stroke-width="1.8" />
+      <circle cx="24" cy="21" r="2" fill="#F8FAFC" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">PyTorch</text>
+    </g>
+
+    <!-- TensorFlow -->
+    <g transform="translate(252, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- TF Cube Outline -->
+      <path d="M 24 12 L 31 16 L 31 26 L 24 30 L 17 26 L 17 16 Z" fill="none" stroke="#8F9CAE" stroke-width="1.5" />
+      <path d="M 24 12 L 24 30 M 24 21 L 31 16 M 24 21 L 17 16" fill="none" stroke="#38BDF8" stroke-width="1" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">TF / Keras</text>
+    </g>
+
+    <!-- OpenCV -->
+    <g transform="translate(378, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- 3 Interlocking Circles (Simplified OpenCV) -->
+      <circle cx="21" cy="18" r="4.5" fill="none" stroke="#EF4444" stroke-width="1.5" />
+      <circle cx="29" cy="18" r="4.5" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+      <circle cx="25" cy="26" r="4.5" fill="none" stroke="#10B981" stroke-width="1.5" />
+      <text x="40" y="25" font-size="11" font-weight="700" fill="#F8FAFC">OpenCV</text>
+    </g>
+
+    <!-- CUDA -->
+    <g transform="translate(504, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Chip layout -->
+      <rect x="18" y="16" width="12" height="12" fill="none" stroke="#10B981" stroke-width="1.5" />
+      <line x1="24" y1="12" x2="24" y2="16" stroke="#10B981" stroke-width="1.2" />
+      <line x1="24" y1="28" x2="24" y2="32" stroke="#10B981" stroke-width="1.2" />
+      <line x1="14" y1="22" x2="18" y2="22" stroke="#10B981" stroke-width="1.2" />
+      <line x1="30" y1="22" x2="34" y2="22" stroke="#10B981" stroke-width="1.2" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">CUDA</text>
+    </g>
+
+    <!-- Java -->
+    <g transform="translate(630, 0)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Java Cup shape -->
+      <path d="M 18 19 L 26 19 C 29 19, 29 23, 26 23 L 18 23 Z" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+      <path d="M 16 17 L 24 17 L 23 25 C 23 27, 17 27, 17 25 Z" fill="#F8FAFC" />
+      <path d="M 19 14 Q 21 11, 20 9 M 22 14 Q 24 11, 23 9" fill="none" stroke="#8F9CAE" stroke-width="1" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">Java</text>
+    </g>
+
+    <!-- ROW 2 -->
+    <!-- JavaScript -->
+    <g transform="translate(0, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- JS square text -->
+      <rect x="18" y="15" width="14" height="14" fill="#38BDF8" rx="2" />
+      <text x="25" y="26" font-size="8" font-weight="900" fill="#070F18" text-anchor="middle">JS</text>
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">JavaScript</text>
+    </g>
+
+    <!-- TypeScript -->
+    <g transform="translate(126, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <rect x="18" y="15" width="14" height="14" fill="#38BDF8" rx="2" />
+      <text x="25" y="26" font-size="8" font-weight="900" fill="#070F18" text-anchor="middle">TS</text>
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">TypeScript</text>
+    </g>
+
+    <!-- React -->
+    <g transform="translate(252, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- React Ellipse/Orbit Rings -->
+      <ellipse cx="24" cy="22" rx="3" ry="9" fill="none" stroke="#38BDF8" stroke-width="1.2" transform="rotate(30, 24, 22)" />
+      <ellipse cx="24" cy="22" rx="3" ry="9" fill="none" stroke="#38BDF8" stroke-width="1.2" transform="rotate(90, 24, 22)" />
+      <ellipse cx="24" cy="22" rx="3" ry="9" fill="none" stroke="#38BDF8" stroke-width="1.2" transform="rotate(150, 24, 22)" />
+      <circle cx="24" cy="22" r="1.5" fill="#38BDF8" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">React / Next</text>
+    </g>
+
+    <!-- FastAPI -->
+    <g transform="translate(378, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Lightning Bolt -->
+      <path d="M 25 12 L 18 22 L 23 22 L 21 30 L 28 20 L 23 20 Z" fill="#38BDF8" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">FastAPI</text>
+    </g>
+
+    <!-- Docker -->
+    <g transform="translate(504, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Docker Containers (Simplified) -->
+      <rect x="18" y="22" width="14" height="6" fill="none" stroke="#38BDF8" stroke-width="1.2" />
+      <rect x="20" y="16" width="4" height="4" fill="#38BDF8" />
+      <rect x="26" y="16" width="4" height="4" fill="#38BDF8" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">Docker</text>
+    </g>
+
+    <!-- Postgres / SQL -->
+    <g transform="translate(630, 54)">
+      <rect width="112" height="42" class="tech-card" rx="6" />
+      <!-- Database Cylinders -->
+      <ellipse cx="24" cy="17" rx="6" ry="2.5" fill="none" stroke="#F8FAFC" stroke-width="1.5" />
+      <path d="M 18 17 L 18 23 A 6 2.5 0 0 0 30 23 L 30 17" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+      <path d="M 18 23 L 18 29 A 6 2.5 0 0 0 30 29 L 30 23" fill="none" stroke="#38BDF8" stroke-width="1.5" />
+      <text x="38" y="25" font-size="11" font-weight="700" fill="#F8FAFC">SQL / VecDB</text>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 80" width="100%" height="100%" aria-label="Systems Footer Module">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="{colors.bg_start}" />
+      <stop offset="100%" stop-color="{colors.bg_end}" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {{
+      font-family: {typography.font_family};
+    }}
+  </style>
+
+  <!-- Container -->
+  <rect width="800" height="80" fill="url(#bgGrad)" stroke="{colors.border}" stroke-width="1.5" rx="8" />
+
+  <!-- Layout -->
+  <g class="font-sans" transform="translate(24, 46)">
+    <!-- Designed By label -->
+    <text x="0" y="0" font-size="11" font-weight="700" fill="{colors.text_primary}" letter-spacing="1">DESIGNED &amp; ENGINEERED BY BERAT YURTSEVER</text>
+    <text x="0" y="15" font-size="9" fill="{colors.text_muted}">All Systems Online. Profile Compiler v2.6.0-stable</text>
+
+    <!-- Accelerator / System Details right aligned -->
+    <text x="752" y="0" font-size="10" font-weight="700" fill="{colors.accent}" text-anchor="end" filter="url(#glow)">CORE ACCELERATION: CUDA ENABLED</text>
+    <text x="752" y="15" font-size="9" fill="{colors.text_muted}" text-anchor="end">Hardware Architecture: PyTorch / NVIDIA GPU</text>
+  </g>
+</svg>

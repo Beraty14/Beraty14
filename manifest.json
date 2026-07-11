@@ -1,0 +1,19 @@
+{
+  "version": "2.6.0",
+  "author": "Beraty14",
+  "theme": "themes/slate.json",
+  "plugins": [
+    "plugins/github_stats.py"
+  ],
+  "widgets": [
+    "hero",
+    "identity",
+    "mission_control",
+    "architecture",
+    "projects_grid",
+    "research_radar",
+    "tech_stack",
+    "footer"
+  ],
+  "cache_enabled": true
+}

@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "title": "THE WILL",
+      "subtitle": "AAA Horror Game AI Engine",
+      "status": "ACTIVE",
+      "progress": 75,
+      "difficulty": 5,
+      "architecture": "Unreal Engine",
+      "ai_integration": "YES",
+      "accent_color": "#FF4F4F"
+    },
+    {
+      "title": "ArcaneSpire",
+      "subtitle": "Java OOP Game Framework",
+      "status": "COMPLETED",
+      "progress": 100,
+      "difficulty": 4,
+      "architecture": "Java / OOP Systems",
+      "ai_integration": "NO",
+      "accent_color": "#FFC048"
+    },
+    {
+      "title": "AlgoritmalarProje",
+      "subtitle": "Multi-Disciplinary Algorithm Visualizer",
+      "status": "ACTIVE",
+      "progress": 85,
+      "difficulty": 4,
+      "architecture": "JavaScript / Algorithms",
+      "ai_integration": "YES",
+      "accent_color": "#10B981"
+    },
+    {
+      "title": "astrobyte",
+      "subtitle": "Lightweight JavaScript Framework",
+      "status": "ACTIVE",
+      "progress": 60,
+      "difficulty": 3,
+      "architecture": "JavaScript Engine",
+      "ai_integration": "NO",
+      "accent_color": "#38BDF8"
+    }
+  ],
+  "research": {
+    "radar": {
+      "AI": 100,
+      "ML": 90,
+      "Bioinformatics": 85,
+      "Algorithms": 95,
+      "Web": 70
+    },
+    "counters": {
+      "Experiments": 426,
+      "Datasets": 12,
+      "Models": 17,
+      "Projects": 4
+    }
+  },
+  "timeline": [
+    {
+      "year": "2023",
+      "title": "Learning",
+      "desc": "Foundational AI/ML & Python systems"
+    },
+    {
+      "year": "2024",
+      "title": "Building",
+      "desc": "Fullstack web applications & APIs"
+    },
+    {
+      "year": "2025",
+      "title": "Research",
+      "desc": "Bioinformatics & Deep Learning models"
+    },
+    {
+      "year": "2026",
+      "title": "TÜBİTAK",
+      "desc": "AI Assistants & RAG Research"
+    },
+    {
+      "year": "Next",
+      "title": "AI Startup",
+      "desc": "Scalable autonomous AI systems"
+    }
+  ]
+}
