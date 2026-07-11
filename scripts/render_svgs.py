@@ -96,7 +96,7 @@ def main():
         # Convert double curly braces (escaped for format() originally) to single braces for valid CSS
         rendered_content = rendered_content.replace("{{", "{").replace("}}", "}")
         
-        output_path = os.path.join(assets_dir, f"{widget}_v27.svg")
+        output_path = os.path.join(assets_dir, f"{widget}_v28.svg")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(rendered_content)
         print(f"Compiled: {output_path}")
@@ -116,7 +116,7 @@ def main():
             rendered_card = render_template(card_template, card_variables)
             rendered_card = rendered_card.replace("{{", "{").replace("}}", "}")
             
-            output_card_path = os.path.join(assets_dir, f"project_{proj_title}_v27.svg")
+            output_card_path = os.path.join(assets_dir, f"project_{proj_title}_v28.svg")
             with open(output_card_path, "w", encoding="utf-8") as f:
                 f.write(rendered_card)
             print(f"Compiled Project Card: {output_card_path}")

@@ -2,38 +2,38 @@
   <defs>
     <!-- Ultra-premium dark gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="{colors.bg_start}" />
-      <stop offset="100%" stop-color="{colors.bg_end}" />
+      <stop offset="0%" stop-color="#070F18" />
+      <stop offset="100%" stop-color="#111827" />
     </linearGradient>
     
     <!-- Clean Dot Grid Pattern -->
     <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="10" cy="10" r="1" fill="{colors.border}" opacity="0.3" />
+      <circle cx="10" cy="10" r="1" fill="#212936" opacity="0.3" />
     </pattern>
 
     <!-- Subtle accent glow -->
     <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="{colors.accent}" stop-opacity="0" />
-      <stop offset="50%" stop-color="{colors.accent}" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="{colors.accent}" stop-opacity="0" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
     </linearGradient>
   </defs>
 
   <style>
-    .font-sans {{
-      font-family: {typography.font_family};
-    }}
-    .font-mono {{
+    .font-sans {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    .font-mono {
       font-family: 'Courier New', Courier, monospace, system-ui;
-    }}
+    }
     /* Clean subtle pulse for background elements, text remains static */
-    @keyframes slowPulse {{
-      0%, 100% {{ opacity: 0.2; }}
-      50% {{ opacity: 0.5; }}
-    }}
-    .bg-pulse {{
+    @keyframes slowPulse {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+    }
+    .bg-pulse {
       animation: slowPulse 6s infinite ease-in-out;
-    }}
+    }
   </style>
 
   <!-- Base Chassis -->
@@ -42,7 +42,7 @@
   <rect width="800" height="240" fill="url(#dotGrid)" rx="8" />
 
   <!-- Corner Technical Brackets -->
-  <g stroke="{colors.border}" stroke-width="1.5" fill="none" opacity="0.6">
+  <g stroke="#212936" stroke-width="1.5" fill="none" opacity="0.6">
     <!-- Top Left -->
     <path d="M 40 40 L 20 40 L 20 60" />
     <!-- Top Right -->
@@ -58,24 +58,24 @@
 
   <!-- Subtitle Tag above Name -->
   <g class="font-mono" transform="translate(400, 80)" text-anchor="middle">
-    <text x="0" y="0" font-size="10" fill="{colors.accent}" font-weight="700" letter-spacing="4">SYSTEM INTERFACE</text>
+    <text x="0" y="0" font-size="10" fill="#38BDF8" font-weight="700" letter-spacing="4">SYSTEM INTERFACE</text>
   </g>
 
   <!-- Main Name Title - Static, No Animation, Extremely Premium -->
   <g class="font-sans" transform="translate(400, 140)" text-anchor="middle">
-    <text x="0" y="0" font-size="46" font-weight="800" fill="{colors.text_primary}" letter-spacing="8">{profile.name}</text>
+    <text x="0" y="0" font-size="46" font-weight="800" fill="#F8FAFC" letter-spacing="8">Berat Yurtsever</text>
   </g>
 
   <!-- Role Description -->
   <g class="font-sans" transform="translate(400, 175)" text-anchor="middle">
-    <text x="0" y="0" font-size="13" fill="{colors.text_muted}" font-weight="600" letter-spacing="3">ARTIFICIAL INTELLIGENCE &amp; SYSTEMS ENGINEER</text>
+    <text x="0" y="0" font-size="13" fill="#8F9CAE" font-weight="600" letter-spacing="3">ARTIFICIAL INTELLIGENCE &amp; SYSTEMS ENGINEER</text>
   </g>
 
   <!-- Center Decorative Glow Line -->
   <rect x="250" y="210" width="300" height="1" fill="url(#accentGlow)" opacity="0.5" />
   
   <!-- Tiny decorative crosshairs -->
-  <g stroke="{colors.accent}" stroke-width="1" opacity="0.5" class="bg-pulse">
+  <g stroke="#38BDF8" stroke-width="1" opacity="0.5" class="bg-pulse">
     <line x1="400" y1="20" x2="400" y2="30" />
     <line x1="395" y1="25" x2="405" y2="25" />
   </g>
