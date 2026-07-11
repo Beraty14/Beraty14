@@ -50,16 +50,16 @@
 
 </div>
 
----
+<br/>
 
-### 🧬 Profile OS Status Dashboard
-Below is a compiled view of real-time server statistics drawn automatically from the GitHub API:
+<p align="center">
+  <i>"Engineering scalable intelligence, one layer at a time."</i>
+</p>
 
-| Metric Type | Kernel Reading | Status Indicator |
-| :--- | :--- | :--- |
-| **Public Repositories** | ` 4 ` | `● ONLINE` |
-| **Profile Followers** | ` 2 ` | `● ONLINE` |
-| **Aggregated Stars** | ` 0 ` | `● ACTIVE` |
-| **System Contributions** | ` 8 ` | `● STABLE` |
+<br/>
 
-*ProfileOS Compiled automatically on: `2026-07-11 21:34:04 UTC`*
+<div align="center">
+  <a href="mailto:beraty14@github.com"><img src="https://img.shields.io/badge/SECURE_TRANSMISSION-INITIATE_CONTACT-FF4F4F?style=for-the-badge&logo=minutemailer&logoColor=white&color=070F18&labelColor=1A2333" alt="Contact" /></a>
+  <a href="https://linkedin.com/in/berat-yurtsever"><img src="https://img.shields.io/badge/PROFESSIONAL_NETWORK-LINKEDIN-38BDF8?style=for-the-badge&logo=linkedin&logoColor=white&color=070F18&labelColor=1A2333" alt="LinkedIn" /></a>
+  <a href="https://github.com/Beraty14"><img src="https://img.shields.io/badge/OPEN_SOURCE-FOLLOW_GITHUB-10B981?style=for-the-badge&logo=github&logoColor=white&color=070F18&labelColor=1A2333" alt="GitHub" /></a>
+</div>
