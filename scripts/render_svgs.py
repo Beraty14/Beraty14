@@ -96,7 +96,7 @@ def main():
         # Convert double curly braces (escaped for format() originally) to single braces for valid CSS
         rendered_content = rendered_content.replace("{{", "{").replace("}}", "}")
         
-        output_path = os.path.join(assets_dir, f"{widget}.svg")
+        output_path = os.path.join(assets_dir, f"{widget}_v26.svg")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(rendered_content)
         print(f"Compiled: {output_path}")
