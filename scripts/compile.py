@@ -72,6 +72,7 @@ def main():
     
     # Inject current timestamp for build signatures
     variables["build_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S UTC")
+    variables["cache_buster"] = str(int(datetime.now().timestamp()))
 
     # 5. Compile README.md from template
     readme_template_path = os.path.join(templates_dir, "README.template.md")
