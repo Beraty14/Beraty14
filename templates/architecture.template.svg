@@ -1,11 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%" aria-label="System Architecture Flowchart">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="100%" height="100%" aria-label="Cognitive Pipeline Architecture">
   <defs>
+    <!-- Background Gradients -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="{colors.bg_start}" />
       <stop offset="100%" stop-color="{colors.bg_end}" />
     </linearGradient>
+    
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="{colors.accent}" stop-opacity="1" />
+      <stop offset="50%" stop-color="{colors.green}" stop-opacity="1" />
+      <stop offset="100%" stop-color="{colors.accent}" stop-opacity="1" />
+    </linearGradient>
+
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feGaussianBlur stdDeviation="5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -14,97 +22,146 @@
   </defs>
 
   <style>
-    .font-sans {{
+    .font-sans {
       font-family: {typography.font_family};
-    }}
+    }
     
-    /* Flowing Animation along connectors */
-    @keyframes dashflow {{
-      to {{
-        stroke-dashoffset: -20;
-      }}
-    }}
-    .flow-line {{
-      stroke-dasharray: 6, 6;
-      animation: dashflow 1.5s infinite linear;
-    }}
-    
-    @keyframes pulseNode {{
-      0%, 100% {{ r: 6; fill-opacity: 0.3; }}
-      50% {{ r: 10; fill-opacity: 0.7; }}
-    }}
-    .pulse-ring {{
-      animation: pulseNode 3s infinite ease-in-out;
-    }}
+    /* Animation Keyframes */
+    @keyframes flowPulse {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateY(0px); opacity: 0.1; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(140px); opacity: 0.1; }
+    }
+    @keyframes pulseCore {
+      0%, 100% { opacity: 0.3; filter: blur(4px); }
+      50% { opacity: 0.8; filter: blur(1px); }
+    }
+
+    .animate-flow-fast {
+      stroke-dasharray: 8, 12;
+      animation: flowPulse 1.2s infinite linear;
+    }
+    .animate-flow-slow {
+      stroke-dasharray: 6, 14;
+      animation: flowPulse 2.5s infinite linear;
+    }
+    .scanner {
+      animation: scanLine 4s infinite linear;
+    }
+    .pulse-core {
+      animation: pulseCore 3s infinite ease-in-out;
+    }
   </style>
 
-  <!-- Container -->
-  <rect width="800" height="240" fill="url(#bgGrad)" stroke="{colors.border}" stroke-width="1.5" rx="8" />
+  <!-- Background -->
+  <rect width="800" height="260" fill="url(#bgGrad)" stroke="{colors.border}" stroke-width="1.5" rx="8" />
 
   <!-- Section Header -->
   <g class="font-sans" transform="translate(24, 28)">
     <circle cx="6" cy="-4" r="4" fill="{colors.accent}" filter="url(#glow)" />
-    <text x="18" y="0" font-size="10" font-weight="700" fill="{colors.text_muted}" letter-spacing="2">03 / ACTIVE SYSTEM PIPELINE ARCHITECTURE</text>
+    <text x="18" y="0" font-size="10" font-weight="700" fill="{colors.text_muted}" letter-spacing="2">03 / ACTIVE SYSTEMS &amp; COGNITIVE PIPELINE PIPELINE</text>
     <line x1="-8" y1="12" x2="760" y2="12" stroke="{colors.border}" stroke-width="1" />
   </g>
 
-  <!-- Node Elements Layout -->
-  <g class="font-sans" transform="translate(0, 40)">
+  <!-- Flow Connector Paths (Backing) -->
+  <g stroke="{colors.border}" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M 200 90 L 300 90" />
+    <path d="M 200 150 L 300 150" />
     
-    <!-- Flow Connector Lines -->
-    <path d="M 90 90 L 210 90" fill="none" stroke="{colors.border}" stroke-width="2" />
-    <path d="M 90 90 L 210 90" fill="none" stroke="{colors.accent}" stroke-width="2" class="flow-line" />
+    <path d="M 480 80 Q 520 80, 540 100 T 580 100" />
+    <path d="M 480 160 Q 520 160, 540 140 T 580 140" />
+    <path d="M 480 120 L 580 120" />
+  </g>
 
-    <!-- Split from Frontend to APIs -->
-    <path d="M 310 90 L 430 50" fill="none" stroke="{colors.border}" stroke-width="2" />
-    <path d="M 310 90 L 430 50" fill="none" stroke="{colors.accent}" stroke-width="2" class="flow-line" />
+  <!-- Flow Connector Paths (Animated Pulses) -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 200 90 L 300 90" stroke="{colors.accent}" stroke-width="2.5" class="animate-flow-fast" filter="url(#glow)" />
+    <path d="M 200 150 L 300 150" stroke="{colors.green}" stroke-width="2" class="animate-flow-slow" />
     
-    <path d="M 310 90 L 430 130" fill="none" stroke="{colors.border}" stroke-width="2" />
-    <path d="M 310 90 L 430 130" fill="none" stroke="{colors.accent}" stroke-width="2" class="flow-line" />
+    <path d="M 480 80 Q 520 80, 540 100 T 580 100" stroke="{colors.accent}" stroke-width="2" class="animate-flow-fast" />
+    <path d="M 480 160 Q 520 160, 540 140 T 580 140" stroke="{colors.green}" stroke-width="2.5" class="animate-flow-slow" filter="url(#glow)" />
+    <path d="M 480 120 L 580 120" stroke="url(#glowGrad)" stroke-width="2" class="animate-flow-fast" />
+  </g>
 
-    <!-- Connectors from APIs to Engines -->
-    <path d="M 530 50 L 650 90" fill="none" stroke="{colors.border}" stroke-width="2" />
-    <path d="M 530 50 L 650 90" fill="none" stroke="{colors.accent}" stroke-width="2" class="flow-line" />
+  <!-- 1. INGESTION ENGINE CARD -->
+  <g transform="translate(24, 60)" class="font-sans">
+    <!-- Card Frame -->
+    <rect width="176" height="140" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
+    <!-- Scanner line -->
+    <line x1="1" y1="0" x2="175" y2="0" stroke="{colors.accent}" stroke-width="1" class="scanner" opacity="0.3" filter="url(#glow)" />
     
-    <path d="M 530 130 L 650 90" fill="none" stroke="{colors.border}" stroke-width="2" />
-    <path d="M 530 130 L 650 90" fill="none" stroke="{colors.accent}" stroke-width="2" class="flow-line" />
+    <!-- Title -->
+    <text x="16" y="24" font-size="11" font-weight="700" fill="{colors.text_primary}" letter-spacing="1">DATA INGESTION</text>
+    <text x="16" y="36" font-size="8.5" fill="{colors.text_muted}">Multi-channel Input Router</text>
+    <line x1="16" y1="44" x2="160" y2="44" stroke="{colors.border}" stroke-width="0.8" />
+    
+    <!-- Streams list -->
+    <g transform="translate(16, 62)" font-size="9.5" font-weight="600" fill="{colors.text_primary}">
+      <circle cx="4" cy="-3" r="2.5" fill="{colors.accent}" />
+      <text x="14" y="0">BIOINFORMATICS STREAMS</text>
+      <text x="14" y="10" font-size="7.5" fill="{colors.text_muted}">FASTA / DNA Sequence Arrays</text>
 
-    <!-- Node 1: Client/User -->
-    <g transform="translate(90, 90)">
-      <circle cx="0" cy="0" r="28" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.5" />
-      <text x="0" y="4" font-size="10" font-weight="700" fill="{colors.text_primary}" text-anchor="middle">USERS</text>
+      <g transform="translate(0, 24)">
+        <circle cx="4" cy="-3" r="2.5" fill="{colors.accent}" />
+        <text x="14" y="0">WEB SEARCH &amp; USER INPUTS</text>
+        <text x="14" y="10" font-size="7.5" fill="{colors.text_muted}">RAG Context Query Logs</text>
+      </g>
     </g>
+  </g>
 
-    <!-- Node 2: Frontend Layer (React/Next) -->
-    <g transform="translate(260, 90)">
-      <circle cx="0" cy="0" r="32" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.5" />
-      <text x="0" y="-2" font-size="10" font-weight="700" fill="{colors.text_primary}" text-anchor="middle">FRONTEND</text>
-      <text x="0" y="10" font-size="8" fill="{colors.text_muted}" text-anchor="middle">React / Next</text>
-    </g>
-
-    <!-- Node 3: FastAPI Backend -->
-    <g transform="translate(480, 50)">
-      <circle cx="0" cy="0" r="30" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.5" />
-      <text x="0" y="-2" font-size="10" font-weight="700" fill="{colors.text_primary}" text-anchor="middle">BACKEND</text>
-      <text x="0" y="10" font-size="8" fill="{colors.text_muted}" text-anchor="middle">FastAPI</text>
-    </g>
-
-    <!-- Node 4: ML Inference Layer -->
-    <g transform="translate(480, 130)">
-      <circle cx="0" cy="0" r="30" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.5" />
-      <text x="0" y="-2" font-size="9" font-weight="700" fill="{colors.text_primary}" text-anchor="middle">INFERENCE</text>
-      <text x="0" y="10" font-size="8" fill="{colors.text_muted}" text-anchor="middle">PyTorch</text>
-    </g>
-
-    <!-- Node 5: Storage & Vector DB -->
-    <g transform="translate(680, 90)">
-      <!-- Pulsing Node Ring -->
-      <circle cx="0" cy="0" r="6" fill="{colors.accent}" class="pulse-ring" filter="url(#glow)" />
+  <!-- 2. AI COGNITIVE PIPELINE CORE -->
+  <g transform="translate(300, 48)" class="font-sans">
+    <!-- Card Frame -->
+    <rect width="180" height="164" fill="{colors.card_bg}" stroke="{colors.accent}" stroke-width="1.5" rx="6" filter="url(#glow)" opacity="0.1" />
+    <rect width="180" height="164" fill="{colors.card_bg}" stroke="{colors.accent}" stroke-width="1.5" rx="6" />
+    
+    <!-- Glowing core node -->
+    <circle cx="90" cy="104" r="36" fill="{colors.accent}" opacity="0.04" class="pulse-core" filter="url(#glow)" />
+    <circle cx="90" cy="104" r="24" fill="none" stroke="{colors.accent}" stroke-width="1" stroke-dasharray="4, 4" class="pulse-core" />
+    
+    <!-- Title -->
+    <text x="90" y="24" font-size="11" font-weight="700" fill="{colors.accent}" letter-spacing="1" text-anchor="middle">COGNITIVE CORE</text>
+    <text x="90" y="36" font-size="8.5" fill="{colors.text_primary}" text-anchor="middle" font-weight="600">PyTorch ML Compute</text>
+    <line x1="20" y1="44" x2="160" y2="44" stroke="{colors.border}" stroke-width="0.8" />
+    
+    <!-- Central Processing details -->
+    <g transform="translate(90, 84)" text-anchor="middle" font-size="9.5" font-weight="700" fill="{colors.text_primary}">
+      <text x="0" y="0">TRANSFORMERS</text>
+      <text x="0" y="12" font-size="7.5" fill="{colors.text_muted}" font-weight="500">Embedding Layer Maps</text>
       
-      <circle cx="0" cy="0" r="32" fill="{colors.card_bg}" stroke="{colors.accent}" stroke-width="1.5" filter="url(#glow)" />
-      <text x="0" y="-2" font-size="9" font-weight="700" fill="{colors.accent}" text-anchor="middle">KNOWLEDGE</text>
-      <text x="0" y="10" font-size="7.5" fill="{colors.text_primary}" text-anchor="middle">Postgres / Vector</text>
+      <g transform="translate(0, 32)">
+        <text x="0" y="0">RAG ASSISTANT</text>
+        <text x="0" y="12" font-size="7.5" fill="{colors.text_muted}" font-weight="500">Retrieval &amp; Synthesis</text>
+      </g>
     </g>
+  </g>
 
+  <!-- 3. ACTION & STORAGE LAYER -->
+  <g transform="translate(598, 60)" class="font-sans">
+    <!-- Card Frame -->
+    <rect width="178" height="140" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
+    <line x1="1" y1="0" x2="177" y2="0" stroke="{colors.green}" stroke-width="1" class="scanner" opacity="0.3" filter="url(#glow)" />
+    
+    <!-- Title -->
+    <text x="16" y="24" font-size="11" font-weight="700" fill="{colors.text_primary}" letter-spacing="1">ACTION / STORAGE</text>
+    <text x="16" y="36" font-size="8.5" fill="{colors.text_muted}">Persistence &amp; UI Outputs</text>
+    <line x1="16" y1="44" x2="162" y2="44" stroke="{colors.border}" stroke-width="0.8" />
+    
+    <!-- Nodes list -->
+    <g transform="translate(16, 62)" font-size="9.5" font-weight="600" fill="{colors.text_primary}">
+      <circle cx="4" cy="-3" r="2.5" fill="{colors.green}" />
+      <text x="14" y="0">VECTOR DATABASE</text>
+      <text x="14" y="10" font-size="7.5" fill="{colors.text_muted}">PostgreSQL / PGVector</text>
+
+      <g transform="translate(0, 24)">
+        <circle cx="4" cy="-3" r="2.5" fill="{colors.green}" />
+        <text x="14" y="0">REST API &amp; APP RESPONSE</text>
+        <text x="14" y="10" font-size="7.5" fill="{colors.text_muted}">JSON Response Serialization</text>
+      </g>
+    </g>
   </g>
 </svg>
