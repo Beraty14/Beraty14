@@ -88,7 +88,6 @@
       <text x="90" y="54" fill="{colors.text_muted}">{profile.department}</text>
     </g>
 
-    <text x="310" y="110" font-size="7.5" fill="{colors.green}" font-weight="700" text-anchor="end">SYS_STATUS: SECURE_APPROVED</text>
   </g>
 
   <!-- 3. HARDWARE GAUGE MATRIX (Right) -->
