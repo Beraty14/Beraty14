@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 388 68" width="100%" height="100%" aria-label="Project Specification Card">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070F18" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .font-sans {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+  </style>
+
+  <!-- Card background -->
+  <rect width="388" height="68" fill="#151B26" stroke="#212936" stroke-width="1.2" rx="6" />
+  
+  <g class="font-sans">
+    <text x="16" y="22" font-size="13" font-weight="700" fill="#F8FAFC">Jarvis</text>
+    <text x="16" y="38" font-size="9" fill="#8F9CAE">AI Assistant &amp; RAG System</text>
+    
+    <!-- Tech specs -->
+    <text x="16" y="52" font-size="9.5" fill="#38BDF8" font-weight="600">Arch: Python / FastAPI / RAG</text>
+    <text x="210" y="52" font-size="9.5" fill="#FF4F4F" font-weight="600">AI: YES</text>
+    <text x="270" y="52" font-size="9.5" fill="#F59E0B" font-weight="600">Diff: ★★★★★</text>
+    <text x="372" y="24" font-size="9" font-weight="700" fill="#FF4F4F" text-anchor="end">● STABLE</text>
+  </g>
+</svg>

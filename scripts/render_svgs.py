@@ -101,6 +101,26 @@ def main():
             f.write(rendered_content)
         print(f"Compiled: {output_path}")
 
+    # 5. Compile individual project cards dynamically
+    project_card_template_path = os.path.join(templates_dir, "project_card.template.svg")
+    if os.path.exists(project_card_template_path):
+        with open(project_card_template_path, "r", encoding="utf-8") as f:
+            card_template = f.read()
+        for project in semi_dynamic_data.get("projects", []):
+            proj_title = project.get("title").lower()
+            # Build variables map for this specific project card
+            card_variables = {}
+            card_variables.update(flatten_dict(theme_data))
+            card_variables.update(flatten_dict(project, prefix="project"))
+            
+            rendered_card = render_template(card_template, card_variables)
+            rendered_card = rendered_card.replace("{{", "{").replace("}}", "}")
+            
+            output_card_path = os.path.join(assets_dir, f"project_{proj_title}_v26.svg")
+            with open(output_card_path, "w", encoding="utf-8") as f:
+                f.write(rendered_card)
+            print(f"Compiled Project Card: {output_card_path}")
+
     print("SVG rendering engine execution complete.")
 
 if __name__ == "__main__":

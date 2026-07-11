@@ -24,9 +24,11 @@
 
 <br/>
 
-<!-- 05 / DETAILED REPOSITORY ARTIFACTS -->
-<!-- Modular project specification cards detailing game dev, visualizers, and web engines -->
-<img src="assets/projects_grid_v26.svg" width="800" alt="Berat Yurtsever - Repository Artifacts" />
+<a href="https://github.com/Beraty14/Jarvis" target="_blank"><img src="assets/project_jarvis_v26.svg" width="394" alt="Jarvis" /></a>
+<a href="https://github.com/Beraty14/ArcaneSpire" target="_blank"><img src="assets/project_arcanespire_v26.svg" width="394" alt="ArcaneSpire" /></a>
+<br/>
+<a href="https://github.com/Beraty14/AlgoritmalarProje" target="_blank"><img src="assets/project_algoritmalarproje_v26.svg" width="394" alt="AlgoritmalarProje" /></a>
+<a href="https://github.com/Beraty14/astrobyte" target="_blank"><img src="assets/project_astrobyte_v26.svg" width="394" alt="astrobyte" /></a>
 
 <br/>
 
@@ -60,4 +62,4 @@ Below is a compiled view of real-time server statistics drawn automatically from
 | **Aggregated Stars** | ` 0 ` | `● ACTIVE` |
 | **System Contributions** | ` 8 ` | `● STABLE` |
 
-*ProfileOS Compiled automatically on: `2026-07-11 21:16:46 UTC`*
+*ProfileOS Compiled automatically on: `2026-07-11 21:21:48 UTC`*

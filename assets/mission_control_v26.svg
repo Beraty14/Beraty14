@@ -43,11 +43,11 @@
     <g transform="translate(0, 0)">
       <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">Jarvis</text>
       <text x="0" y="24" font-size="10" fill="#8F9CAE">AI Assistant &amp; RAG System</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="#FF4F4F" text-anchor="end">75%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#FF4F4F" text-anchor="end">ACTIVE</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="#FF4F4F" text-anchor="end">100%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#FF4F4F" text-anchor="end">STABLE</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="165" height="4" fill="#FF4F4F" rx="2" />
+      <rect x="0" y="32" width="220" height="4" fill="#FF4F4F" rx="2" />
     </g>
 
     <!-- Item 2 -->
@@ -55,7 +55,7 @@
       <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">ArcaneSpire</text>
       <text x="0" y="24" font-size="10" fill="#8F9CAE">Java OOP Game Framework</text>
       <text x="220" y="10" font-size="11" font-weight="700" fill="#FFC048" text-anchor="end">100%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#FFC048" text-anchor="end">COMPLETED</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#FFC048" text-anchor="end">STABLE</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
       <rect x="0" y="32" width="220" height="4" fill="#FFC048" rx="2" />
@@ -65,11 +65,11 @@
     <g transform="translate(532, 0)">
       <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">AlgoritmalarProje</text>
       <text x="0" y="24" font-size="10" fill="#8F9CAE">Multi-Disciplinary Algorithm Visualizer</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="#10B981" text-anchor="end">85%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#10B981" text-anchor="end">ACTIVE</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="#10B981" text-anchor="end">100%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#10B981" text-anchor="end">STABLE</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="187" height="4" fill="#10B981" rx="2" />
+      <rect x="0" y="32" width="220" height="4" fill="#10B981" rx="2" />
     </g>
 
     <!-- System Health Status Bar at Bottom -->

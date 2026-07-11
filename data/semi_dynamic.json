@@ -3,8 +3,8 @@
     {
       "title": "Jarvis",
       "subtitle": "AI Assistant &amp; RAG System",
-      "status": "ACTIVE",
-      "progress": 75,
+      "status": "STABLE",
+      "progress": 100,
       "difficulty": 5,
       "architecture": "Python / FastAPI / RAG",
       "ai_integration": "YES",
@@ -13,7 +13,7 @@
     {
       "title": "ArcaneSpire",
       "subtitle": "Java OOP Game Framework",
-      "status": "COMPLETED",
+      "status": "STABLE",
       "progress": 100,
       "difficulty": 4,
       "architecture": "Java / OOP Systems",
@@ -23,8 +23,8 @@
     {
       "title": "AlgoritmalarProje",
       "subtitle": "Multi-Disciplinary Algorithm Visualizer",
-      "status": "ACTIVE",
-      "progress": 85,
+      "status": "STABLE",
+      "progress": 100,
       "difficulty": 4,
       "architecture": "JavaScript / Algorithms",
       "ai_integration": "YES",
@@ -33,8 +33,8 @@
     {
       "title": "astrobyte",
       "subtitle": "Lightweight JavaScript Framework",
-      "status": "ACTIVE",
-      "progress": 60,
+      "status": "STABLE",
+      "progress": 100,
       "difficulty": 3,
       "architecture": "JavaScript Engine",
       "ai_integration": "NO",
