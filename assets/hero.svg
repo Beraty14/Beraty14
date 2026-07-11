@@ -22,51 +22,51 @@
   </defs>
 
   <style>
-    .font-sans {{
+    .font-sans {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    }}
-    .text-glow {{
+    }
+    .text-glow {
       filter: url(#glow);
-    }}
+    }
     
     /* Animations */
-    @keyframes pulse {{
-      0%, 100% {{ opacity: 0.25; transform: scale(1); }}
-      50% {{ opacity: 0.7; transform: scale(1.03); }}
-    }}
-    @keyframes float {{
-      0%, 100% {{ transform: translateY(0px); }}
-      50% {{ transform: translateY(-4px); }}
-    }}
-    @keyframes drawGrid {{
-      0% {{ stroke-dashoffset: 800; }}
-      100% {{ stroke-dashoffset: 0; }}
-    }}
-    @keyframes typing {{
-      from {{ width: 0; }}
-      to {{ width: 100%; }}
-    }}
-    @keyframes blink {{
-      50% {{ opacity: 0; }}
-    }}
-    @keyframes loadingBar {{
-      0% {{ width: 0%; }}
-      100% {{ width: 100%; }}
-    }}
+    @keyframes pulse {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.03); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+    @keyframes drawGrid {
+      0% { stroke-dashoffset: 800; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    @keyframes loadingBar {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
 
-    .pulse-node {{
+    .pulse-node {
       animation: pulse 4s infinite ease-in-out;
       transform-origin: center;
-    }}
-    .float-group {{
+    }
+    .float-group {
       animation: float 6s infinite ease-in-out;
-    }}
-    .cursor {{
+    }
+    .cursor {
       animation: blink 0.9s infinite;
-    }}
-    .loading-progress {{
+    }
+    .loading-progress {
       animation: loadingBar 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    }}
+    }
   </style>
 
   <!-- Background -->

@@ -14,9 +14,9 @@
   </defs>
 
   <style>
-    .font-sans {{
+    .font-sans {
       font-family: {typography.font_family};
-    }}
+    }
   </style>
 
   <!-- Container -->
@@ -32,54 +32,54 @@
   <!-- 2x2 Grid of Projects -->
   <g class="font-sans" transform="translate(24, 56)">
     
-    <!-- Row 1, Col 1: THE WILL -->
+    <!-- Row 1, Col 1 -->
     <g transform="translate(0, 0)">
       <!-- Card background -->
       <rect width="364" height="68" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
-      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">THE WILL</text>
-      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">AAA Horror Game AI Engine</text>
+      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">{projects[0].title}</text>
+      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">{projects[0].subtitle}</text>
       
       <!-- Tech specs -->
-      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Engine: Unreal</text>
-      <text x="120" y="52" font-size="9.5" fill="{colors.red}" font-weight="600">AI: Yes</text>
-      <text x="190" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★★</text>
-      <text x="348" y="24" font-size="9" font-weight="700" fill="{colors.red}" text-anchor="end">● ACTIVE</text>
+      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Arch: {projects[0].architecture}</text>
+      <text x="210" y="52" font-size="9.5" fill="{projects[0].accent_color}" font-weight="600">AI: {projects[0].ai_integration}</text>
+      <text x="270" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★★</text>
+      <text x="348" y="24" font-size="9" font-weight="700" fill="{projects[0].accent_color}" text-anchor="end">● {projects[0].status}</text>
     </g>
 
-    <!-- Row 1, Col 2: ArcaneSpire -->
+    <!-- Row 1, Col 2 -->
     <g transform="translate(388, 0)">
       <rect width="364" height="68" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
-      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">ArcaneSpire</text>
-      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">Java OOP Game Framework</text>
+      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">{projects[1].title}</text>
+      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">{projects[1].subtitle}</text>
       
-      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Engine: Java2D</text>
-      <text x="120" y="52" font-size="9.5" fill="{colors.text_muted}" font-weight="600">AI: No</text>
-      <text x="190" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★☆</text>
-      <text x="348" y="24" font-size="9" font-weight="700" fill="{colors.green}" text-anchor="end">● STABLE</text>
+      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Arch: {projects[1].architecture}</text>
+      <text x="210" y="52" font-size="9.5" fill="{colors.text_muted}" font-weight="600">AI: {projects[1].ai_integration}</text>
+      <text x="270" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★☆</text>
+      <text x="348" y="24" font-size="9" font-weight="700" fill="{projects[1].accent_color}" text-anchor="end">● {projects[1].status}</text>
     </g>
 
-    <!-- Row 2, Col 1: AlgoritmalarProje -->
+    <!-- Row 2, Col 1 -->
     <g transform="translate(0, 84)">
       <rect width="364" height="68" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
-      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">AlgoritmalarProje</text>
-      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">Multi-Disciplinary Algorithm Visualizer</text>
+      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">{projects[2].title}</text>
+      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">{projects[2].subtitle}</text>
       
-      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Engine: JavaScript</text>
-      <text x="135" y="52" font-size="9.5" fill="{colors.green}" font-weight="600">AI: Yes</text>
-      <text x="190" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★☆</text>
-      <text x="348" y="24" font-size="9" font-weight="700" fill="{colors.yellow}" text-anchor="end">● TESTING</text>
+      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Arch: {projects[2].architecture}</text>
+      <text x="210" y="52" font-size="9.5" fill="{projects[2].accent_color}" font-weight="600">AI: {projects[2].ai_integration}</text>
+      <text x="270" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★★☆</text>
+      <text x="348" y="24" font-size="9" font-weight="700" fill="{projects[2].accent_color}" text-anchor="end">● {projects[2].status}</text>
     </g>
 
-    <!-- Row 2, Col 2: astrobyte -->
+    <!-- Row 2, Col 2 -->
     <g transform="translate(388, 84)">
       <rect width="364" height="68" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1.2" rx="6" />
-      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">astrobyte</text>
-      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">Lightweight JavaScript Framework</text>
+      <text x="16" y="22" font-size="13" font-weight="700" fill="{colors.text_primary}">{projects[3].title}</text>
+      <text x="16" y="38" font-size="9" fill="{colors.text_muted}">{projects[3].subtitle}</text>
       
-      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Engine: Vanilla JS</text>
-      <text x="135" y="52" font-size="9.5" fill="{colors.text_muted}" font-weight="600">AI: No</text>
-      <text x="190" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★☆☆</text>
-      <text x="348" y="24" font-size="9" font-weight="700" fill="{colors.accent}" text-anchor="end">● ACTIVE</text>
+      <text x="16" y="52" font-size="9.5" fill="{colors.accent}" font-weight="600">Arch: {projects[3].architecture}</text>
+      <text x="210" y="52" font-size="9.5" fill="{colors.text_muted}" font-weight="600">AI: {projects[3].ai_integration}</text>
+      <text x="270" y="52" font-size="9.5" fill="{colors.yellow}" font-weight="600">Diff: ★★★☆☆</text>
+      <text x="348" y="24" font-size="9" font-weight="700" fill="{projects[3].accent_color}" text-anchor="end">● {projects[3].status}</text>
     </g>
 
   </g>

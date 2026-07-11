@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "title": "THE WILL",
-      "subtitle": "AAA Horror Game AI Engine",
+      "title": "Jarvis",
+      "subtitle": "AI Assistant & RAG System",
       "status": "ACTIVE",
       "progress": 75,
       "difficulty": 5,
-      "architecture": "Unreal Engine",
+      "architecture": "Python / FastAPI / RAG",
       "ai_integration": "YES",
       "accent_color": "#FF4F4F"
     },

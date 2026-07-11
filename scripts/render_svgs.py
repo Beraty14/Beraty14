@@ -58,6 +58,11 @@ def main():
     with open(os.path.join(data_dir, "semi_dynamic.json"), "r", encoding="utf-8") as f:
         semi_dynamic_data = json.load(f)
     
+    # Pre-calculate progress widths for SVG bar rendering (total scale is 220px)
+    for project in semi_dynamic_data.get("projects", []):
+        progress = project.get("progress", 0)
+        project["progress_width"] = str(int(220 * (progress / 100.0)))
+    
     dynamic_file = os.path.join(data_dir, "dynamic.json")
     if os.path.exists(dynamic_file):
         with open(dynamic_file, "r", encoding="utf-8") as f:
@@ -88,6 +93,8 @@ def main():
             template_content = f.read()
 
         rendered_content = render_template(template_content, variables)
+        # Convert double curly braces (escaped for format() originally) to single braces for valid CSS
+        rendered_content = rendered_content.replace("{{", "{").replace("}}", "}")
         
         output_path = os.path.join(assets_dir, f"{widget}.svg")
         with open(output_path, "w", encoding="utf-8") as f:

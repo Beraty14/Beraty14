@@ -14,16 +14,16 @@
   </defs>
 
   <style>
-    .font-sans {{
+    .font-sans {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    }}
-    @keyframes barFill {{
-      0% {{ width: 0%; }}
-      100% {{ width: 100%; }}
-    }}
-    .progress-fill {{
+    }
+    @keyframes barFill {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    .progress-fill {
       animation: barFill 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    }}
+    }
   </style>
 
   <!-- Container -->
@@ -39,37 +39,37 @@
   <!-- Projects Progress Grid -->
   <g class="font-sans" transform="translate(24, 64)">
     
-    <!-- Item 1: THE WILL -->
+    <!-- Item 1 -->
     <g transform="translate(0, 0)">
-      <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">THE WILL</text>
-      <text x="0" y="24" font-size="10" fill="#8F9CAE">AAA Horror Game AI Engine</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="#EF4444" text-anchor="end">75%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#EF4444" text-anchor="end">ACTIVE</text>
+      <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">Jarvis</text>
+      <text x="0" y="24" font-size="10" fill="#8F9CAE">AI Assistant & RAG System</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="#FF4F4F" text-anchor="end">75%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#FF4F4F" text-anchor="end">ACTIVE</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="165" height="4" fill="#EF4444" rx="2" />
+      <rect x="0" y="32" width="165" height="4" fill="#FF4F4F" rx="2" />
     </g>
 
-    <!-- Item 2: ArcaneSpire -->
+    <!-- Item 2 -->
     <g transform="translate(266, 0)">
       <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">ArcaneSpire</text>
       <text x="0" y="24" font-size="10" fill="#8F9CAE">Java OOP Game Framework</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="#10B981" text-anchor="end">100%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#10B981" text-anchor="end">STABLE</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="#FFC048" text-anchor="end">100%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#FFC048" text-anchor="end">COMPLETED</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="220" height="4" fill="#10B981" rx="2" />
+      <rect x="0" y="32" width="220" height="4" fill="#FFC048" rx="2" />
     </g>
 
-    <!-- Item 3: AlgoritmalarProje -->
+    <!-- Item 3 -->
     <g transform="translate(532, 0)">
       <text x="0" y="10" font-size="12" font-weight="700" fill="#F8FAFC">AlgoritmalarProje</text>
-      <text x="0" y="24" font-size="10" fill="#8F9CAE">Bioinformatics / Vis System</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="#F59E0B" text-anchor="end">85%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="#F59E0B" text-anchor="end">ACTIVE</text>
+      <text x="0" y="24" font-size="10" fill="#8F9CAE">Multi-Disciplinary Algorithm Visualizer</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="#10B981" text-anchor="end">85%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="#10B981" text-anchor="end">ACTIVE</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="#151B26" stroke="#212936" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="187" height="4" fill="#F59E0B" rx="2" />
+      <rect x="0" y="32" width="187" height="4" fill="#10B981" rx="2" />
     </g>
 
     <!-- System Health Status Bar at Bottom -->

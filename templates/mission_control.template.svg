@@ -14,16 +14,16 @@
   </defs>
 
   <style>
-    .font-sans {{
+    .font-sans {
       font-family: {typography.font_family};
-    }}
-    @keyframes barFill {{
-      0% {{ width: 0%; }}
-      100% {{ width: 100%; }}
-    }}
-    .progress-fill {{
+    }
+    @keyframes barFill {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    .progress-fill {
       animation: barFill 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    }}
+    }
   </style>
 
   <!-- Container -->
@@ -39,37 +39,37 @@
   <!-- Projects Progress Grid -->
   <g class="font-sans" transform="translate(24, 64)">
     
-    <!-- Item 1: THE WILL -->
+    <!-- Item 1 -->
     <g transform="translate(0, 0)">
-      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">THE WILL</text>
-      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">AAA Horror Game AI Engine</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="{colors.red}" text-anchor="end">75%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="{colors.red}" text-anchor="end">ACTIVE</text>
+      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">{projects[0].title}</text>
+      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">{projects[0].subtitle}</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="{projects[0].accent_color}" text-anchor="end">{projects[0].progress}%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="{projects[0].accent_color}" text-anchor="end">{projects[0].status}</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="165" height="4" fill="{colors.red}" rx="2" />
+      <rect x="0" y="32" width="{projects[0].progress_width}" height="4" fill="{projects[0].accent_color}" rx="2" />
     </g>
 
-    <!-- Item 2: ArcaneSpire -->
+    <!-- Item 2 -->
     <g transform="translate(266, 0)">
-      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">ArcaneSpire</text>
-      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">Java OOP Game Framework</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="{colors.green}" text-anchor="end">100%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="{colors.green}" text-anchor="end">STABLE</text>
+      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">{projects[1].title}</text>
+      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">{projects[1].subtitle}</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="{projects[1].accent_color}" text-anchor="end">{projects[1].progress}%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="{projects[1].accent_color}" text-anchor="end">{projects[1].status}</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="220" height="4" fill="{colors.green}" rx="2" />
+      <rect x="0" y="32" width="{projects[1].progress_width}" height="4" fill="{projects[1].accent_color}" rx="2" />
     </g>
 
-    <!-- Item 3: AlgoritmalarProje -->
+    <!-- Item 3 -->
     <g transform="translate(532, 0)">
-      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">AlgoritmalarProje</text>
-      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">Bioinformatics / Vis System</text>
-      <text x="220" y="10" font-size="11" font-weight="700" fill="{colors.yellow}" text-anchor="end">85%</text>
-      <text x="220" y="24" font-size="9" font-weight="700" fill="{colors.yellow}" text-anchor="end">ACTIVE</text>
+      <text x="0" y="10" font-size="12" font-weight="700" fill="{colors.text_primary}">{projects[2].title}</text>
+      <text x="0" y="24" font-size="10" fill="{colors.text_muted}">{projects[2].subtitle}</text>
+      <text x="220" y="10" font-size="11" font-weight="700" fill="{projects[2].accent_color}" text-anchor="end">{projects[2].progress}%</text>
+      <text x="220" y="24" font-size="9" font-weight="700" fill="{projects[2].accent_color}" text-anchor="end">{projects[2].status}</text>
       <!-- Progress Bar -->
       <rect x="0" y="32" width="220" height="4" fill="{colors.card_bg}" stroke="{colors.border}" stroke-width="1" rx="2" />
-      <rect x="0" y="32" width="187" height="4" fill="{colors.yellow}" rx="2" />
+      <rect x="0" y="32" width="{projects[2].progress_width}" height="4" fill="{projects[2].accent_color}" rx="2" />
     </g>
 
     <!-- System Health Status Bar at Bottom -->
